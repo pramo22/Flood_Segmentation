@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disaster Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-white min-h-screen p-6">
+
+  <!-- Header -->
+  <header class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-blue-700">🌊 Flood Disaster Assessment Dashboard</h1>
+    <p class="text-gray-600 mt-2">Visual insights into segmentation, detection, and damage impact</p>
+  </header>
+
+  <!-- Stats Grid -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-l-4 border-blue-500">
+      <h2 class="text-lg font-semibold text-gray-700">Flooded Area</h2>
+      <p class="text-3xl font-bold text-blue-700">{{ flooded_area }}</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-l-4 border-red-500">
+      <h2 class="text-lg font-semibold text-gray-700">{{ change_severity }}</h2>
+      <p class="text-3xl font-bold text-red-600">High</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-l-4 border-green-500">
+      <h2 class="text-lg font-semibold text-gray-700">Structures Affected</h2>
+      <p class="text-3xl font-bold text-green-600">{{ structure_affected }}</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center border-l-4 border-purple-500">
+      <h2 class="text-lg font-semibold text-gray-700">PDF Report</h2>
+      <a href="{{ url_for('static', filename='uploads/report.pdf') }}" download class="text-purple-700 font-bold underline">
+        Download
+      </a>
+    </div>
+  </section>
+
+  <!-- Images & Results -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+    {% for title, path in [
+      ('Original Image', original),
+      ('Semantic Segmentation', semantic_result),
+      ('Instance Segmentation', instance_result),
+      ('Change Detection', change_result),
+      ('Flood Intensity Heatmap', heatmap)
+    ] %}
+    <div class="bg-white p-4 rounded-lg shadow-lg">
+      <h3 class="text-lg font-semibold text-blue-600 mb-2">{{ title }}</h3>
+      <img src="{{ url_for('static', filename='uploads/' + path) }}" class="rounded w-full border border-gray-200">
+    </div>
+    {% endfor %}
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 mt-10">
+    &copy; 2025 FloodAI – Disaster Response Dashboard
+  </footer>
+
+</body>
+</html>
