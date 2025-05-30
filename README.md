@@ -73,33 +73,33 @@ The project uses a UNet-based model (`unet.py`) trained to segment flooded areas
      python app.py
 
 
-# 📊 Dataset
+# Dataset
 
 The dataset is located in (`dataset/`):
 - (`Image/`): Raw satellite images.
 - (`Mask/`): Binary or multiclass masks indicating flooded regions.
 - (`metadata.csv`): Supplementary metadata for analysis.
 
-# 📓 Jupyter Notebook
+# Jupyter Notebook
 The notebook (`floods_project.ipynb`) provides a step-by-step demonstration of:
 - Data preprocessing
 - Model training
 - Segmentation results
 - Visualization
 
-# ⚙️ Utilities
+# Utilities
 
 (`utils.py`): Includes helper functions for preprocessing, visualization, and mask/image handling.
 
-# 📈 Change Detection
+## Change Detection
 Implemented in (`detect_chages.py`), this script compares pre- and post-disaster images to assess flood impact.
 
 
-# 📦 Instance Segmentation
+## Instance Segmentation
 Handled via (`instace_segmentation.py`), this script segments multiple flooded objects using instance-level techniques.
 
 
-# 📌 To-Do
+## 📌 To-Do
 - Improve UI of the web dashboard.
 - Add performance metrics (IoU, Dice Score).
 - Enhance real-time data handling and upload support.
