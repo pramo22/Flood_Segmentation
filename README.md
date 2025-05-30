@@ -6,7 +6,7 @@ This project is designed to perform flood segmentation using deep learning techn
 ## 📁 Project Structure
 
 project/
-├── app.py # Flask app for the web interface
+├── app.py # Flask app for the web interface <br>
 ├── detect_chages.py # Script for change detection
 ├── floods_project.ipynb # Jupyter Notebook for experimentation
 ├── instace_segmentation.py # Instance segmentation implementation
