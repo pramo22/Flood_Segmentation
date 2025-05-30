@@ -76,5 +76,7 @@ def change_detection():
                            before_img = before_filename,
                            after_img = after_filename,
                            change_result = 'change_result.png')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
