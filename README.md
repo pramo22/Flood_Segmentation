@@ -68,4 +68,3 @@ The project uses a UNet-based model (`unet.py`) trained to segment flooded areas
      pip install scikit-image
 
 
-
