@@ -68,3 +68,11 @@ The project uses a UNet-based model (`unet.py`) trained to segment flooded areas
      pip install scikit-image
 
 
+## Running Flask App
+   ```bash
+   cd project
+   python app.py
+
+
+
+
