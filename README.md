@@ -6,16 +6,16 @@ This project is designed to perform flood segmentation using deep learning techn
 ## 📁 Project Structure
 
 project/ <br>
-├── app.py # Flask app for the web interface <br>
-├── detect_chages.py # Script for change detection <br>
-├── floods_project.ipynb # Jupyter Notebook for experimentation <br>
-├── instace_segmentation.py # Instance segmentation implementation <br>
-├── segmentation_model.pth # Trained UNet model <br>
-├── unet.py # UNet model architecture <br>
-├── utils.py # Utility functions <br>
+├── app.py                       # Flask app for the web interface <br>
+├── detect_chages.py             # Script for change detection <br>
+├── floods_project.ipynb         # Jupyter Notebook for experimentation <br>
+├── instace_segmentation.py      # Instance segmentation implementation <br>
+├── segmentation_model.pth       # Trained UNet model <br>
+├── unet.py                      # UNet model architecture <br>
+├── utils.py                     # Utility functions <br>
 ├── dataset/ <br>
-│ ├── Image/ # Satellite images <br>
-│ ├── Mask/ # Corresponding segmentation masks <br>
-│ └── metadata.csv # Image metadata <br>
-├── static/ # Static files for Flask <br>
-└── templates/ # HTML templates for Flask <br>
+│ ├── Image/                     # Satellite images <br>
+│ ├── Mask/                      # Corresponding segmentation masks <br>
+│ └── metadata.csv               # Image metadata <br>
+├── static/                      # Static files for Flask <br>
+└── templates/                   # HTML templates for Flask <br>
