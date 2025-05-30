@@ -42,8 +42,10 @@ The project uses a UNet-based model (`unet.py`) trained to segment flooded areas
   ```bash
   pip install cv2
   
-```bash
+
+  ```bash
   pip install torch
+  
 
 
 
