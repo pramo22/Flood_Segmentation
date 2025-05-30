@@ -80,6 +80,8 @@ The dataset is located in (`dataset/`):
 - (`Mask/`): Binary or multiclass masks indicating flooded regions.
 - (`metadata.csv`): Supplementary metadata for analysis.
 
+
+
 ## Jupyter Notebook
 The notebook (`floods_project.ipynb`) provides a step-by-step demonstration of:
 - Data preprocessing
@@ -87,8 +89,9 @@ The notebook (`floods_project.ipynb`) provides a step-by-step demonstration of:
 - Segmentation results
 - Visualization
 
-## Utilities
+  
 
+## Utilities
 (`utils.py`): Includes helper functions for preprocessing, visualization, and mask/image handling.
 
 ## Change Detection
@@ -106,6 +109,5 @@ Handled via (`instace_segmentation.py`), this script segments multiple flooded o
 - Integrate with a larger disaster analysis system.
 
 ## License
-
  This project is for educational and research purposes only.
 
