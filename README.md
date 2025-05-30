@@ -6,16 +6,16 @@ This project is designed to perform flood segmentation using deep learning techn
 ## 📁 Project Structure
 
 project/ <br>
-├── app.py &nbsp;                # Flask app for the web interface <br>
-├── detect_chages.py             # Script for change detection <br>
-├── floods_project.ipynb         # Jupyter Notebook for experimentation <br>
-├── instace_segmentation.py      # Instance segmentation implementation <br>
-├── segmentation_model.pth       # Trained UNet model <br>
-├── unet.py                      # UNet model architecture <br>
-├── utils.py                     # Utility functions <br>
+├── app.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Flask app for the web interface <br>
+├── detect_chages.py &nbsp;&nbsp;&nbsp;# Script for change detection <br>
+├── floods_project.ipynb&nbsp;&nbsp;   # Jupyter Notebook for experimentation <br>
+├── instace_segmentation.py&nbsp;&nbsp;# Instance segmentation implementation <br>
+├── segmentation_model.pth&nbsp;&nbsp; # Trained UNet model <br>
+├── unet.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# UNet model architecture <br>
+├── utils.py &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Utility functions <br>
 ├── dataset/ <br>
-│ ├── Image/                     # Satellite images <br>
-│ ├── Mask/                      # Corresponding segmentation masks <br>
-│ └── metadata.csv               # Image metadata <br>
-├── static/                      # Static files for Flask <br>
-└── templates/                   # HTML templates for Flask <br>
+│ ├── Image/ &nbsp;&nbsp;&nbsp;&nbsp;# Satellite images <br>
+│ ├── Mask/  &nbsp;&nbsp;&nbsp;&nbsp;# Corresponding segmentation masks <br>
+│ └── metadata.csv &nbsp;&nbsp;&nbsp;# Image metadata <br>
+├── static/ &nbsp;&nbsp;&nbsp;&nbsp; # Static files for Flask <br>
+└── templates/&nbsp;&nbsp;&nbsp;&nbsp;# HTML templates for Flask <br>
