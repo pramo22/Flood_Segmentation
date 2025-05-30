@@ -105,3 +105,7 @@ Handled via (`instace_segmentation.py`), this script segments multiple flooded o
 - Enhance real-time data handling and upload support.
 - Integrate with a larger disaster analysis system.
 
+## License
+
+ This project is for educational and research purposes only.
+
