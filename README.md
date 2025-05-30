@@ -38,13 +38,35 @@ The project uses a UNet-based model (`unet.py`) trained to segment flooded areas
 ### Prerequisites
 
 - Python 3.8+
-- Install required libraries:
-  ```bash
-  pip install cv2
-  
+- Install Flask
+    ```bash
+       pip install flask
+    
+- Install Numpy
+    ``` bash
+     pip install numpy
+    
+- Install Pandas
+    ``` bash
+     pip install pandas
+    
+- Install PIL
+     ``` bash
+     pip install pillow
 
-  ```bash
-  pip install torch
+- Install CV2
+     ``` bash
+     pip install cv2
+
+- Install torch and torchvision
+     ```bash
+     pip install torch
+     pip install torchvision
+
+- Install skimage
+     ```bash
+     pip install scikit-image
+
   
 
 
