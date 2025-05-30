@@ -72,6 +72,12 @@ The project uses a UNet-based model (`unet.py`) trained to segment flooded areas
      cd project
      python app.py
 
+# Contributors ✨
+  Thanks to these amazing contributors:
+   - [swathi-agarwal](https://github.com/swathi-agarwal) - Machine Learning Development to work on the semantic segmentation of the project.
+   - [Deepakmity02](https://github.com/Deepakmity02) - Implemented Machine Learning models on jupyter notebook.
+   - [HaniCode254](https://github.com/HaniCode254) - Frontend Developement to work on the frontend part of the project.
+
 
 ## Dataset
 
