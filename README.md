@@ -18,4 +18,29 @@ project/ <br>
 │ ├── Mask/  &nbsp;&nbsp;&nbsp;&nbsp;# Corresponding segmentation masks <br>
 │ └── metadata.csv &nbsp;&nbsp;&nbsp;# Image metadata <br>
 ├── static/ &nbsp;&nbsp;&nbsp;&nbsp; # Static files for Flask <br>
-└── templates/&nbsp;&nbsp;&nbsp;&nbsp;# HTML templates for Flask <br>
+└── templates/&nbsp;&nbsp;&nbsp;&nbsp;# HTML templates for Flask <be>
+
+
+## 🚀 Features
+
+- Flood segmentation using UNet.
+- Instance segmentation support.
+- Change detection over time.
+- Visualization of predictions via a web interface.
+- Organized dataset of images and masks for training/testing.
+
+## 🧠 Model
+
+The project uses a UNet-based model (`unet.py`) trained to segment flooded areas. The trained model is saved in `segmentation_model.pth`.
+
+## 🖥️ Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- Install required libraries:
+  ```bash
+  pip install cv2
+
+  pip install torch
+
